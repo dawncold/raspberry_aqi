@@ -72,7 +72,7 @@ def decode_frame(_frame):
     for item in DATA_DESC:
         start, desc, unit = item
         value = int(ord(_frame[start]) << 8 | ord(_frame[start + 1]))
-        data[str(start)] = (desc, value, unit)
+        data[start] = value
     return data
 
 
