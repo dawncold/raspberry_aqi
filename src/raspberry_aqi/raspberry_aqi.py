@@ -30,7 +30,7 @@ if __name__ == '__main__':
             continue
         break
     config = read_config()
-    json_data = {
+    json_data = [{
         "measurement": config['measurement'],
         "tags": {
             "location": config['location'],
@@ -52,6 +52,6 @@ if __name__ == '__main__':
             "dl5.0@0.1l": data['data'][pms7003.P_C_50],
             "dl10@0.1l": data['data'][pms7003.P_C_100],
         }
-    }
+    }]
     client = InfluxDBClient(database=config['database'])
-    client.write(json_data)
+    client.write_points(json_data)
