@@ -35,7 +35,6 @@ if __name__ == '__main__':
         "tags": {
             "location": config['location'],
             "device": config['device'],
-            "version": data['version'],
             "city": config['city']
         },
         "fields": {
