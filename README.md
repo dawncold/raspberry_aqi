@@ -1,7 +1,7 @@
 # Home AQI monitor
 
 ## Screenshot
-
+![](https://dn-dawncold-me.qbox.me/Screenshot%20from%202018-03-05%2022-17-32.png)
 
 ## Requirements (hardware)
 
